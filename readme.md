@@ -1,8 +1,8 @@
 # korn [![Build Status](https://travis-ci.org/SamVerschueren/korn.svg?branch=master)](https://travis-ci.org/SamVerschueren/korn)
 
-> Run your front-end tests in a Docker container
+> Front-end testing in a headless environment
 
-This tool can be used to run your front-end tests in an environment without a display server like Jenkins. The only requirement is [Docker](https://www.docker.com/).
+This tool can be used to run your front-end tests in an environment without a display server, like Jenkins. The only requirement is [Docker](https://www.docker.com/).
 
 
 ## Install
@@ -21,7 +21,11 @@ $ korn --help
 	  $ korn [cwd]
 
 	Options
-	  --verbose  Run in verbose mode [Default: false]
+	  --verbose  	Run in verbose mode [Default: false]
+	  --flags, -f 	Extra flags that are passed to the test command
+
+	Example
+	  $ korn -f=single-run
 ```
 
 

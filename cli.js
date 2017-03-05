@@ -11,14 +11,23 @@ const cli = meow(`
 	  $ korn [cwd]
 
 	Options
-	  --verbose  Run in verbose mode [Default: false]
-`);
+	  --verbose  	Run in verbose mode [Default: false]
+	  --flags, -f 	Extra flags that are passed to the test command
+
+	Example
+	  $ korn -f=single-run
+`, {
+	alias: {
+		f: 'flags'
+	}
+});
 
 const options = Object.assign({
 	name: uuid()
 }, cli.flags);
 
 options.cwd = cli.input.length > 0 ? cli.input : process.cwd();
+options.flags = Array.isArray(options.flags) ? options.flags : [options.flags];
 
 const tasks = new Listr([
 	{

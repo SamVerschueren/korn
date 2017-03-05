@@ -1,7 +1,7 @@
 {
   "name": "korn",
   "version": "0.1.0",
-  "description": "Run your front-end tests in a Docker container",
+  "description": "Front-end testing in a headless environment",
   "license": "MIT",
   "repository": "SamVerschueren/korn",
   "author": {
