@@ -26,7 +26,7 @@ const options = Object.assign({
 	name: uuid()
 }, cli.flags);
 
-options.cwd = cli.input.length > 0 ? cli.input : process.cwd();
+options.cwd = cli.input.length > 0 ? cli.input[0] : process.cwd();
 options.flags = Array.isArray(options.flags) ? options.flags : [options.flags];
 
 const tasks = new Listr([
