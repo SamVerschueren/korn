@@ -2,7 +2,7 @@
 
 > Front-end testing in a headless environment
 
-This tool can be used to run your front-end tests in an environment without a display server, like Jenkins. The only requirement is [Docker](https://www.docker.com/).
+This tool can be used to run your front-end tests in an environment without a display server, like Jenkins. The only requirement is [Docker](https://www.docker.com/).  The underlying container used by `korn` is [`circleci/node:6-browsers`](https://hub.docker.com/r/circleci/node/).
 
 
 ## Install
