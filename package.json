@@ -33,7 +33,7 @@
   "dependencies": {
     "execa": "^0.6.0",
     "has-yarn": "^1.0.0",
-    "listr": "^0.11.0",
+    "listr": "^0.13.0",
     "meow": "^3.7.0",
     "rxjs": "^5.2.0",
     "split": "^1.0.0",
