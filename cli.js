@@ -11,8 +11,8 @@ const cli = meow(`
 	  $ korn [cwd]
 
 	Options
-	  --verbose  	Run in verbose mode [Default: false]
-	  --flags, -f 	Extra flags that are passed to the test command
+	  --verbose    Run in verbose mode [Default: false]
+	  --flags, -f  Extra flags that are passed to the test command
 
 	Example
 	  $ korn -f=single-run
