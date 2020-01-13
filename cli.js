@@ -12,13 +12,18 @@ const cli = meow(`
 
 	Options
 	  --verbose    Run in verbose mode [Default: false]
+	  --node, -n   Node.js version to run your tests in [Default: Running Node.js version]
 	  --flags, -f  Extra flags that are passed to the test command
 
 	Example
 	  $ korn -f=single-run
 `, {
 	alias: {
-		f: 'flags'
+		f: 'flags',
+		n: 'node'
+	},
+	default: {
+		node: process.versions.node
 	}
 });
 
